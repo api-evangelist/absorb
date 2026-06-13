@@ -1,0 +1,81 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Absorb LMS",
+  "description": "Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data.",
+  "url": "https://www.absorblms.com",
+  "applicationCategory": "EducationalApplication",
+  "applicationSubCategory": "Learning Management System",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://www.absorblms.com/pricing"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Absorb LMS",
+    "url": "https://www.absorblms.com",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "url": "https://support.absorblms.com/hc/en-us",
+      "email": "support@absorblms.com"
+    }
+  },
+  "hasPart": [
+    {
+      "@type": "WebAPI",
+      "name": "Absorb Integration API",
+      "description": "REST-based interface for integrating external systems with Absorb LMS. Supports user management, course management, enrollment processing, certificate tracking, department administration, and e-learning completion data.",
+      "documentation": "https://docs.myabsorb.com/integration-api/v2/docs",
+      "termsOfService": "https://www.absorblms.com/legal",
+      "url": "https://rest.myabsorb.com",
+      "availableChannel": {
+        "@type": "ServiceChannel",
+        "serviceUrl": "https://rest.myabsorb.com"
+      },
+      "featureList": [
+        "User management",
+        "Course management",
+        "Enrollment processing",
+        "Certificate tracking",
+        "Department administration",
+        "Learning path management",
+        "E-learning completion tracking",
+        "Webhooks",
+        "OAuth 2.0 authentication",
+        "API key authentication"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "name": "Absorb SCIM API",
+      "description": "Implements the SCIM 2.0 standard for seamless user and group provisioning through standardized endpoints, enabling automated identity lifecycle management in Absorb LMS.",
+      "documentation": "https://docs.myabsorb.com/scim-api/v2/docs",
+      "url": "https://rest.myabsorb.com",
+      "featureList": [
+        "SCIM 2.0 compliance",
+        "User provisioning",
+        "Group provisioning",
+        "Identity lifecycle management",
+        "Okta integration",
+        "Azure AD integration"
+      ]
+    },
+    {
+      "@type": "WebAPI",
+      "name": "Absorb Infuse API",
+      "description": "Enables developers to embed Absorb LMS learning experiences directly within external applications. Requires a paid add-on license for access.",
+      "documentation": "https://docs.myabsorb.com/infuse-api/docs",
+      "url": "https://rest.myabsorb.com",
+      "featureList": [
+        "Embedded learning experiences",
+        "Headless LMS integration",
+        "External application embedding"
+      ]
+    }
+  ],
+  "sameAs": [
+    "https://docs.myabsorb.com/",
+    "https://support.absorblms.com/hc/en-us"
+  ]
+}
