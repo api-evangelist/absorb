@@ -1,0 +1,100 @@
+name: Absorb LMS
+description: Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data. The Integration API provides a REST-based interface for integrating external systems with Absorb LMS, supporting user and enrollment management, course administration, and reporting.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/absorb/refs/heads/main/apis.yml
+type: Index
+tags:
+  - LMS
+  - Learning Management
+  - E-Learning
+  - Training
+  - Courses
+  - Enrollments
+  - Certificates
+created: "2026-06-13"
+modified: "2026-06-13"
+specificationVersion: "0.19"
+aid: absorb
+apis:
+  - name: Absorb Integration API
+    description: REST-based interface for integrating external systems with Absorb LMS. Supports user management, course management, enrollment processing, certificate tracking, department administration, and e-learning completion data.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.myabsorb.com/
+    baseURL: https://rest.myabsorb.com
+    tags:
+      - Users
+      - Courses
+      - Enrollments
+      - Certificates
+      - Departments
+      - Learning Paths
+    properties:
+      - type: Documentation
+        url: https://docs.myabsorb.com/integration-api/v2/docs
+      - type: Changelog
+        url: https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log
+      - type: Authentication
+        url: https://docs.myabsorb.com/integration-api/v2/docs#authentication
+    contact:
+      - FN: Absorb LMS Support
+        url: https://support.absorblms.com/hc/en-us
+        email: support@absorblms.com
+  - name: Absorb SCIM API
+    description: Implements the SCIM 2.0 standard for seamless user and group provisioning through standardized endpoints, enabling automated identity lifecycle management in Absorb LMS.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.myabsorb.com/
+    baseURL: https://rest.myabsorb.com
+    tags:
+      - SCIM
+      - User Provisioning
+      - Identity Management
+      - Groups
+    properties:
+      - type: Documentation
+        url: https://docs.myabsorb.com/
+    contact:
+      - FN: Absorb LMS Support
+        url: https://support.absorblms.com/hc/en-us
+        email: support@absorblms.com
+  - name: Absorb Infuse API
+    description: Enables developers to embed Absorb LMS learning experiences directly within external applications. Requires a paid add-on license for access.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://docs.myabsorb.com/
+    baseURL: https://rest.myabsorb.com
+    tags:
+      - Embedding
+      - Headless LMS
+      - Learning Experiences
+    properties:
+      - type: Documentation
+        url: https://docs.myabsorb.com/
+    contact:
+      - FN: Absorb LMS Support
+        url: https://support.absorblms.com/hc/en-us
+        email: support@absorblms.com
+common:
+  - type: Documentation
+    url: https://docs.myabsorb.com/
+  - type: Support
+    url: https://support.absorblms.com/hc/en-us
+  - type: Blog
+    url: https://www.absorblms.com/blog
+  - type: Changelog
+    url: https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log
+  - type: ReleaseNotes
+    url: https://support.absorblms.com/hc/en-us/sections/204325708-Absorb-LMS-Release-Notes
+  - type: Webhooks
+    url: https://docs.myabsorb.com/integration-api/v2/docs#webhooks
+  - type: GettingStarted
+    url: https://support.absorblms.com/hc/en-us/articles/222482188-Getting-Started-with-the-Absorb-Integration-API
+  - type: Glossary
+    url: https://support.absorblms.com/hc/en-us/articles/26898046456467-Integration-API-Glossary
+  - type: Plans
+    url: plans/absorb-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/absorb-rate-limits.yml
+  - type: FinOps
+    url: finops/absorb-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

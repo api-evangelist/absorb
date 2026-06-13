@@ -1,0 +1,48 @@
+name: Absorb LMS API Rate Limits
+description: Rate limiting details for the Absorb Integration API. Requests are limited per second with a burst allowance. Clients exceeding the limit receive HTTP 429 responses and should implement exponential backoff retry logic.
+url: https://docs.myabsorb.com/integration-api/v2/docs
+created: "2026-06-13"
+modified: "2026-06-13"
+limits:
+  - name: Standard Request Limit
+    description: Maximum number of API requests allowed per second under normal operation.
+    scope: per-account
+    rate: 200
+    period: second
+    burst: 100
+    burstDescription: An additional 100 requests above the standard limit are permitted as a short-term burst buffer.
+  - name: Burst Limit
+    description: Additional requests permitted on top of the standard per-second limit to absorb short traffic spikes.
+    scope: per-account
+    rate: 100
+    period: second
+    note: Acts as a buffer for brief overruns above the 200 req/s standard limit.
+errors:
+  - code: 429
+    message: Too Many Requests
+    description: Returned when the rate limit is exceeded. Clients should implement exponential backoff retry logic and reduce request volume when this status code is received.
+handling:
+  strategy: exponential-backoff
+  description: Watch for 429 status codes and implement a retry mechanism using exponential backoff to reduce request volume progressively until requests succeed.
+  recommendedHeaders:
+    - Retry-After
+authentication:
+  tokenValidity: 4 hours
+  note: Bearer tokens obtained via the /authenticate endpoint are valid for four hours. Only one token exists per user for the Basic authentication method; generating a new token invalidates the previous one. OAuth 2.0 is the recommended authentication method.
+environments:
+  - name: US Production
+    baseURL: https://rest.myabsorb.com
+  - name: US Sandbox
+    baseURL: https://rest.sandbox.myabsorb.com
+  - name: EU Production
+    baseURL: https://rest.myabsorb.eu
+  - name: EU Sandbox
+    baseURL: https://rest.sandbox.myabsorb.eu
+  - name: AU Production
+    baseURL: https://rest.myabsorb.com.au
+  - name: AU Sandbox
+    baseURL: https://rest.sandbox.myabsorb.com.au
+  - name: CA Production
+    baseURL: https://rest.myabsorb.ca
+  - name: CA Sandbox
+    baseURL: https://rest.sandbox.myabsorb.ca

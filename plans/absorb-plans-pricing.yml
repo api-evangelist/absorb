@@ -1,0 +1,65 @@
+name: Absorb LMS Plans and Pricing
+description: Absorb LMS uses a custom quote pricing model based on active learners — users who access the platform within a rolling period. Pricing is not published publicly; organizations must contact sales for a quote. Three general tiers exist covering core, advanced, and enterprise capabilities.
+url: https://www.absorblms.com/
+created: "2026-06-13"
+modified: "2026-06-13"
+plans:
+  - name: Core
+    description: Core LMS functionality for organizations beginning their learning management journey. Includes course creation, learner enrollment, basic reporting, mobile access, and standard integrations such as HRIS and SSO.
+    url: https://www.absorblms.com/
+    pricing:
+      model: per-active-learner
+      period: annual
+      currency: USD
+      note: Custom quote required. Small deployments (100-500 learners) typically range from low-to-mid five figures annually.
+    features:
+      - Course creation and management
+      - Learner enrollment
+      - Basic reporting and dashboards
+      - Mobile access
+      - HRIS integrations
+      - SSO support
+      - Standard REST API access
+  - name: Professional
+    description: Advanced tier adding AI-powered recommendations, white-labeling, expanded API access, advanced analytics, and enhanced integrations for growing organizations.
+    url: https://www.absorblms.com/
+    pricing:
+      model: per-active-learner
+      period: annual
+      currency: USD
+      note: Custom quote required. Approximately 20-30% premium over Core tier. Mid-market deployments (500-2,000 learners) typically range mid-five to low-six figures annually.
+    features:
+      - All Core features
+      - AI-powered learning recommendations
+      - White-labeling and custom branding
+      - Expanded API access
+      - Advanced analytics and reporting
+      - Enhanced third-party integrations
+      - Webhooks
+  - name: Enterprise
+    description: Full-featured tier for large organizations requiring dedicated account management, premium support SLAs, enhanced security controls, and custom integrations including the Infuse API for headless LMS embedding.
+    url: https://www.absorblms.com/
+    pricing:
+      model: per-active-learner
+      period: annual
+      currency: USD
+      note: Custom quote required. Enterprise deployments (2,000+ learners) typically range low-to-mid six figures annually. Multi-year contracts yield 10-20% per-learner savings.
+    features:
+      - All Professional features
+      - Dedicated account management
+      - Premium support SLAs
+      - Enhanced security and compliance controls
+      - Custom integrations
+      - Infuse API access (headless LMS embedding)
+      - SCIM 2.0 user provisioning
+      - Custom implementation services
+notes:
+  - Pricing is per active learner using a rolling measurement period.
+  - SSO functionality may require a separate fee.
+  - SCIM provisioning is available on premium plans.
+  - Infuse API (embedding) requires a paid add-on license.
+  - Implementation services range from $5,000 to $100,000+ depending on complexity.
+  - Median observed contract value is approximately $20,000 annually.
+contact:
+  url: https://www.absorblms.com/contact
+  email: support@absorblms.com

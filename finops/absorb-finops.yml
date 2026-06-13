@@ -1,0 +1,63 @@
+name: Absorb LMS FinOps
+description: Financial operations guidance for managing Absorb LMS API costs. Absorb LMS pricing is based on active learners rather than API call volume, making cost control strategies focus on user lifecycle management, contract negotiation, and add-on feature governance.
+url: https://www.absorblms.com/
+created: "2026-06-13"
+modified: "2026-06-13"
+model:
+  type: per-active-learner
+  description: Costs are driven by the number of active learners — users who access the platform within a defined rolling measurement period (typically 12 months). API usage itself does not incur additional per-call costs.
+  primaryCostDriver: active-learner-count
+  secondaryCostDrivers:
+    - contract-term-length
+    - add-on-features
+    - implementation-complexity
+    - support-tier
+costOptimization:
+  strategies:
+    - name: Active Learner Hygiene
+      description: Regularly audit and deactivate inactive user accounts to reduce the active learner count and lower per-period costs. Use the Users API endpoint to identify and bulk-deactivate stale accounts.
+      impact: high
+    - name: Multi-Year Contract Negotiation
+      description: Multi-year contracts typically yield 10-20% per-learner savings compared to annual contracts. Negotiate contract length during renewal cycles.
+      impact: high
+    - name: Add-On Governance
+      description: Infuse API access, SCIM provisioning, and SSO integration may require paid add-ons or premium plan upgrades. Audit which add-ons are actively used and remove unused ones.
+      impact: medium
+    - name: Implementation Cost Planning
+      description: Plan implementation scope carefully. Costs range from $5,000 to $100,000+ depending on complexity. Phased rollouts can spread implementation costs.
+      impact: medium
+    - name: Support Tier Right-Sizing
+      description: Premium support tiers add approximately 10-20% to base costs. Evaluate whether premium support SLAs are required or if standard support is sufficient.
+      impact: low
+  monitoring:
+    - metric: Active learner count per period
+      description: Track active learner counts monthly to forecast contract overage risks and identify deactivation opportunities.
+    - metric: API rate limit consumption
+      description: Monitor for 429 error rates to identify integration inefficiencies that could indicate unnecessary API calls inflating operational overhead.
+    - metric: Add-on feature utilization
+      description: Audit usage of paid add-ons (Infuse API, SCIM, SSO) quarterly to identify unused entitlements.
+budgeting:
+  benchmarks:
+    - segment: Small (100-500 learners)
+      annualRange: "$15,000 - $50,000"
+      note: Low-to-mid five figures annually
+    - segment: Mid-Market (500-2,000 learners)
+      annualRange: "$50,000 - $150,000"
+      note: Mid-five to low-six figures annually
+    - segment: Enterprise (2,000+ learners)
+      annualRange: "$150,000+"
+      note: Low-to-mid six figures annually
+  medianContractValue:
+    amount: 20000
+    currency: USD
+    period: annual
+    source: Observed market data (51 purchases)
+    averageSavingsNegotiated: "18.84%"
+notes:
+  - Absorb LMS does not publish list pricing; all contracts require a custom quote from sales.
+  - API usage (call volume) is not metered or billed separately from the learner license.
+  - Sandbox environments are available at no additional cost for development and testing.
+  - Volume discounts are available; larger learner counts attract lower per-learner rates.
+contact:
+  sales: https://www.absorblms.com/contact
+  support: https://support.absorblms.com/hc/en-us
