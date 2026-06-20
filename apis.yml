@@ -1,6 +1,6 @@
 name: Absorb LMS
 description: Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data. The Integration API provides a REST-based interface for integrating external systems with Absorb LMS, supporting user and enrollment management, course administration, and reporting.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/absorb/refs/heads/main/apis.yml
 type: Index
 tags:
@@ -18,7 +18,7 @@ aid: absorb
 apis:
   - name: Absorb Integration API
     description: REST-based interface for integrating external systems with Absorb LMS. Supports user management, course management, enrollment processing, certificate tracking, department administration, and e-learning completion data.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.myabsorb.com/
     baseURL: https://rest.myabsorb.com
     tags:
@@ -41,7 +41,7 @@ apis:
         email: support@absorblms.com
   - name: Absorb SCIM API
     description: Implements the SCIM 2.0 standard for seamless user and group provisioning through standardized endpoints, enabling automated identity lifecycle management in Absorb LMS.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.myabsorb.com/
     baseURL: https://rest.myabsorb.com
     tags:
@@ -58,7 +58,7 @@ apis:
         email: support@absorblms.com
   - name: Absorb Infuse API
     description: Enables developers to embed Absorb LMS learning experiences directly within external applications. Requires a paid add-on license for access.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://docs.myabsorb.com/
     baseURL: https://rest.myabsorb.com
     tags:
