@@ -3,12 +3,19 @@
   "feeds": [
     {
       "source": "https://www.absorblms.com/blog",
-      "feed_url": "https://www.absorblms.com/blog",
-      "title": "Absorb LMS Blog",
+      "feed_url": "https://www.absorblms.com/blog/rss.xml",
+      "title": "",
       "saved": 0,
-      "note": "No RSS/Atom feed resolved (tried /blog/feed/, /blog/rss/, /feed/, /blog/feed.xml, /rss.xml - all 404). HTML-scraped blog index. Latest post 2026-06-05 predates prior fetched cutoff 2026-06-14T20:42:17Z; nothing new."
+      "method": "discovered"
+    },
+    {
+      "source": "https://support.absorblms.com/hc/en-us",
+      "feed_url": "https://support.absorblms.com/hc/en-us",
+      "title": "",
+      "saved": 0,
+      "method": "none"
     }
   ],
-  "fetched": "2026-06-21T17:00:00Z",
+  "fetched": "2026-06-27T12:03:07Z",
   "post_count": 0
 }

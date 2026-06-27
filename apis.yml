@@ -31,7 +31,7 @@ apis:
     properties:
       - type: Documentation
         url: https://docs.myabsorb.com/integration-api/v2/docs
-      - type: Changelog
+      - type: ChangeLog
         url: https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log
       - type: Authentication
         url: https://docs.myabsorb.com/integration-api/v2/docs#authentication
@@ -79,7 +79,7 @@ common:
     url: https://support.absorblms.com/hc/en-us
   - type: Blog
     url: https://www.absorblms.com/blog
-  - type: Changelog
+  - type: ChangeLog
     url: https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log
   - type: ReleaseNotes
     url: https://support.absorblms.com/hc/en-us/sections/204325708-Absorb-LMS-Release-Notes
