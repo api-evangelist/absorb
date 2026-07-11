@@ -73,6 +73,8 @@ apis:
         url: https://support.absorblms.com/hc/en-us
         email: support@absorblms.com
 common:
+  - type: DomainSecurity
+    url: security/absorb-domain-security.yml
   - type: Documentation
     url: https://docs.myabsorb.com/
   - type: Support
