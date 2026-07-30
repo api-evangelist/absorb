@@ -1,6 +1,18 @@
 name: Absorb LMS
 description: Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data. The Integration API provides a REST-based interface for integrating external systems with Absorb LMS, supporting user and enrollment management, course administration, and reporting.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: paid
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Paid · Requires approval
+  confidence: medium
+  source:
+  - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/absorb.png
 url: https://raw.githubusercontent.com/api-evangelist/absorb/refs/heads/main/apis.yml
 type: Index
 tags:
