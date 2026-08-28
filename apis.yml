@@ -1,5 +1,16 @@
 name: Absorb LMS
 description: Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data. The Integration API provides a REST-based interface for integrating external systems with Absorb LMS, supporting user and enrollment management, course administration, and reporting.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: paid
   onboarding: approval
