@@ -26,7 +26,18 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/absorb.png
 url: https://raw.githubusercontent.com/api-evangelist/absorb/refs/heads/main/apis.yml
 type: Index
+x-docs-platform: docusaurus
+x-docs-platform-confidence: medium
+x-docs-platform-checked: 2026-09-17
 tags:
+  - LMS
+  - Learning Management
+  - E-Learning
+  - Training
+  - Courses
+  - Enrollment
+  - Certificates
+tags_raw:
   - LMS
   - Learning Management
   - E-Learning
@@ -47,7 +58,7 @@ apis:
     tags:
       - User
       - Courses
-      - Enrollments
+      - Enrollment
       - Certificates
       - Departments
       - Learning Paths
@@ -97,6 +108,10 @@ apis:
     humanURL: https://docs.myabsorb.com/
     baseURL: https://rest.myabsorb.com
     tags:
+      - Embeddings
+      - Headless LMS
+      - Learning Experiences
+    tags_raw:
       - Embedding
       - Headless LMS
       - Learning Experiences
