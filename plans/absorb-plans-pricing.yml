@@ -1,3 +1,8 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (dated 2026-06-13 by the file itself), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
+generated: '2026-06-13'
 name: Absorb LMS Plans and Pricing
 description: Absorb LMS uses a custom quote pricing model based on active learners — users who access the platform within a rolling period. Pricing is not published publicly; organizations must contact sales for a quote. Three general tiers exist covering core, advanced, and enterprise capabilities.
 url: https://www.absorblms.com/
