@@ -31,7 +31,6 @@ x-docs-platform-confidence: medium
 x-docs-platform-checked: 2026-09-17
 tags:
   - LMS
-  - Learning Management
   - E-Learning
   - Training
   - Courses
@@ -88,7 +87,7 @@ apis:
     tags:
       - SCIM
       - User Provisioning
-      - Identity Management
+      - Identity and Access Management
       - Group
     tags_raw:
       - SCIM
