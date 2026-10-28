@@ -64,51 +64,72 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data.
+Absorb LMS is a cloud-based learning management system with a REST API for managing learners, courses, certificates, departments, enrollments, and tracking e-learning completion data. The Integration API provides a REST-based interface for integrating external systems with Absorb LMS, supporting user and enrollment management, course administration, and reporting.
 
-## APIs
+**Areas:** LMS · E-Learning · Training · Courses · Enrollment · Certificates
 
-- **Integration API** - REST-based interface for integrating external systems with Absorb LMS. Covers users, enrollments, courses, certificates, departments, learning paths, and more.
-- **SCIM API** - SCIM 2.0 standard implementation for automated user and group provisioning.
-- **Infuse API** - Headless LMS embedding for integrating Absorb learning experiences into external applications (paid add-on).
+## Absorb LMS on APIs.io
 
-## Documentation
+Everything profiled for Absorb LMS is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/absorb/](https://apis.io/providers/absorb/)** — or go straight to one of the APIs or properties below.
 
-- [API Documentation](https://docs.myabsorb.com/)
-- [Integration API v2 Reference](https://docs.myabsorb.com/integration-api/v2/docs)
-- [Getting Started Guide](https://support.absorblms.com/hc/en-us/articles/222482188-Getting-Started-with-the-Absorb-Integration-API)
-- [API Changelog](https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log)
-- [API Glossary](https://support.absorblms.com/hc/en-us/articles/26898046456467-Integration-API-Glossary)
-- [Help Center](https://support.absorblms.com/hc/en-us)
+### APIs (3)
+
+- [Absorb Integration API](https://apis.io/apis/absorb/absorb-integration-api/) — REST-based interface for integrating external systems with Absorb LMS. Supports user management, course management, enrollment processing, certificate…
+- [Absorb SCIM API](https://apis.io/apis/absorb/absorb-scim-api/) — Implements the SCIM 2.0 standard for seamless user and group provisioning through standardized endpoints, enabling automated identity lifecycle management…
+- [Absorb Infuse API](https://apis.io/apis/absorb/absorb-infuse-api/) — Enables developers to embed Absorb LMS learning experiences directly within external applications. Requires a paid add-on license for access.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Absorb Domain Security](https://apis.io/security/absorb/absorb-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Absorb Plans Pricing](https://apis.io/plans/absorb/absorb-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Absorb Rate Limits](https://apis.io/rate-limits/absorb/absorb-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Absorb Finops](https://apis.io/finops/absorb/absorb-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Documentation](https://docs.myabsorb.com/)
+- [Getting started](https://support.absorblms.com/hc/en-us/articles/222482188-Getting-Started-with-the-Absorb-Integration-API)
+- [Support](https://support.absorblms.com/hc/en-us)
+- [Changelog](https://support.absorblms.com/hc/en-us/articles/22151754631955-Integration-API-Change-Log)
 - [Blog](https://www.absorblms.com/blog)
 
-## Authentication
+## API Evangelist rating
 
-The Integration API supports:
+**Unrated** — no public website could be reached for this company, so there was almost nothing to measure and nothing a reader could check.
 
-- **OAuth 2.0** (recommended) - Supports on-behalf-of flows for requesting tokens on behalf of other users.
-- **Private API Key** - Required `X-API-Key` header obtained from portal settings.
-- **Basic Method** - `/authenticate` endpoint returning a Bearer token valid for four hours.
+This is not a score of zero. No rating is published for this company. If that is wrong because something public exists that we missed, say so on this repository or email [info@apievangelist.com](mailto:info@apievangelist.com) and it will be re-run — free, and no justification needed.
 
-## Base URLs
+## How this profile is made
 
-| Region | Production | Sandbox |
-|--------|-----------|---------|
-| US | `https://rest.myabsorb.com` | `https://rest.sandbox.myabsorb.com` |
-| EU | `https://rest.myabsorb.eu` | `https://rest.sandbox.myabsorb.eu` |
-| AU | `https://rest.myabsorb.com.au` | `https://rest.sandbox.myabsorb.com.au` |
-| CA | `https://rest.myabsorb.ca` | `https://rest.sandbox.myabsorb.ca` |
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Rate Limits
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Absorb LMS: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- 200 requests per second standard limit
-- 100 additional burst requests above the standard limit
-- HTTP 429 returned when exceeded; implement exponential backoff
+## Open an issue
 
-## Pricing
-
-Absorb LMS uses a per-active-learner pricing model with custom quotes. No public list pricing is available. Contact [sales](https://www.absorblms.com/contact) for a quote.
-
-## Maintainer
-
-**Kin Lane** - kin@apievangelist.com
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/absorb/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
