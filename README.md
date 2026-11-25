@@ -86,25 +86,25 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Absorb Domain Security](https://apis.io/security/absorb/absorb-domain-security/)
+- [Absorb LMS Domain Security](https://apis.io/security/absorb/absorb-domain-security/)
 
 #### Plans and pricing (1)
 
 Published plans, tiers and prices.
 
-- [Absorb Plans Pricing](https://apis.io/plans/absorb/absorb-plans-pricing/)
+- [Absorb LMS Plans Pricing](https://apis.io/plans/absorb/absorb-plans-pricing/)
 
 #### Rate limits (1)
 
 Published request limits.
 
-- [Absorb Rate Limits](https://apis.io/rate-limits/absorb/absorb-rate-limits/)
+- [Absorb LMS Rate Limits](https://apis.io/rate-limits/absorb/absorb-rate-limits/)
 
 #### FinOps (1)
 
 What the API costs to run, by operation.
 
-- [Absorb Finops](https://apis.io/finops/absorb/absorb-finops/)
+- [Absorb LMS Finops](https://apis.io/finops/absorb/absorb-finops/)
 
 ## Where to find this API
 
